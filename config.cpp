@@ -1,4 +1,23 @@
+class CfgVehicles
+{
+	class Inventory_Base;
+	class Edible_Base;
+	class MilkaChocolate: Zagorky_ColorBase
+	{
+		scope=2;
+		displayName="Milka Chocolate";
+		descriptionShort="Fines German Chocolate";
+		hiddenSelections[]=
+		{
+			"camoground"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"MilkaCow\data\MilkaChocolate_co.paa"
+		};
+	
 class CfgPatches
+
 {
 	class MilkaCow
 	{
@@ -26,6 +45,16 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"MilkaCow\data\MilkaCow_co.paa"
+		};
+
+		class DamageSystem
+		{
+			class Skinning
+			{
+				item="MilkaChocolate";
+				count=1;
+
+			};
 		};
 	};
 };

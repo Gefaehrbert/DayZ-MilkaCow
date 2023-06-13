@@ -19,27 +19,13 @@ class CfgPatches
 	};
 };
 
-
-	class MilkaChocolate: Zagorky_ColorBase
-	{
-		scope=2;
-		displayName="Milka Chocolate";
-		descriptionShort="Fines German Chocolate";
-		hiddenSelections[]=
-		{
-			"camoground"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"MilkaCow\data\MilkaChocolate_co.paa"
-		};
-
 class CfgVehicles
 {
 	class Animal_BosTaurusF;
 	class Animal_BosTaurusF_Spotted;
 	class Inventory_Base;
 	class Edible_Base;
+	class Zagorky_ColorBase;
 	class MilkaCow: Animal_BosTaurusF_Spotted
 	{
 		scope=2;
@@ -73,5 +59,5 @@ class CfgVehicles
 		{
 			"MilkaCow\data\MilkaChocolate_co.paa"
 		};
-
+	};
 };

@@ -8,7 +8,7 @@ class CfgPatches
 			"Animal_BosTaurus"
 		};
 		weapons[]={};
-		requiredVersion=1.18;
+		requiredVersion=0.1;
 		requiredAddons[]=
 		{
 			"DZ_Animals",
@@ -21,11 +21,10 @@ class CfgPatches
 
 class CfgVehicles
 {
+	class Inventory_Base;
+	class Animal_Base;
 	class Animal_BosTaurusF;
 	class Animal_BosTaurusF_Spotted;
-	class Inventory_Base;
-	class Edible_Base;
-	class Zagorky_ColorBase;
 	class MilkaCow: Animal_BosTaurusF_Spotted
 	{
 		scope=2;
@@ -40,17 +39,22 @@ class CfgVehicles
 		{
 			class Skinning
 			{
+				class ObtainedChocolate
+				{
 				item="MilkaChocolate";
-				count=1;
-
+				count=10;
+				};
 			};
 		};
 	};
-	class MilkaChocolate: Zagorky_ColorBase
+	class Edible_Base;
+	class Zagorky_ColorBase;
+	class Zagorky_Chocolate;	
+	class MilkaChocolate: Zagorky_Chocolate
 	{
 		scope=2;
 		displayName="Milka Chocolate";
-		descriptionShort="Fines German Chocolate";
+		descriptionShort="Finest German Chocolate";
 		hiddenSelections[]=
 		{
 			"camoground"
